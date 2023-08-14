@@ -8,8 +8,9 @@
 
 <div class="navbar">
   <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <div class="dropdown">
+  <a href="#read">Read</a>
+  <a href="#news">About</a>
+  <!--<div class="dropdown">
     <button class="dropbtn">Dropdown 
       <i class="fa fa-caret-down"></i>
     </button>
@@ -18,28 +19,38 @@
       <a href="#">Link 2</a>
       <a href="#">Link 3</a>
     </div>
-  </div> 
+  </div> -->
 </div>
 
 
-<h3>Prototype</h3>
-<div>I have been saved from death to life by grace through faith</div>
-<h3>Personal Expanded</h3>
+<h3>Prototype Salvation Story</h3>
+<div><strong>"I have been saved from death to life by grace through faith"</strong></div>
+<p>What have you been saved from? (replacing the word "death")</p>
+<textarea></textarea>
+<p>What have you been saved to? (replacing the word "life")</p>
+<textarea></textarea>
+<p>What have you been saved by? (replacing the word "grace")</p>
+<textarea></textarea>
+<p>What have you been saved through? (replacing the word "faith")</p>
+<textarea></textarea>
+
+<h3>Personal Salvation Story Summary</h3>
 <div id="person-story-1"></div>
+<h3>Personal Salvation Story Expanded</h3>
+<div id="person-story-2"></div>
 
 </body>
 </html>
 <script>
 
-function Gospelstory(a_saved,a_death,a_life,a_grace,a_faith){
-this.saved = a_saved,
+function Gospelstory(a_death,a_life,a_grace,a_faith){
 this.death = a_death,
 this.life = a_life,
 this.grace = a_grace,
 this.faith = a_faith
 }
 
-const person1 = new Gospelstory('rescued','the pit of despair','a more joyful life','the providence of God','the community of the church');
+const person1 = new Gospelstory('the pit of despair',"a more joyful life",'the providence of God','the community of the church');
 
 document.getElementById("person-story-1").innerHTML = "I have been " + person1.saved + ' from ' + person1.death + ' to ' + person1.life + ' by ' + person1.grace + ' through ' + person1.faith;
 </script>
