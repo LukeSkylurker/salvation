@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color:white;">
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+</div>
+
+
+<h3>Prototype</h3>
+<div>I have been saved from death to life by grace through faith</div>
+<h3>Personal Expanded</h3>
+<div id="person-story-1"></div>
+
+</body>
+</html>
+<script>
+
+function Gospelstory(a_saved,a_death,a_life,a_grace,a_faith){
+this.saved = a_saved,
+this.death = a_death,
+this.life = a_life,
+this.grace = a_grace,
+this.faith = a_faith
+}
+
+const person1 = new Gospelstory('rescued','the pit of despair','a more joyful life','the providence of God','the community of the church');
+
+document.getElementById("person-story-1").innerHTML = "I have been " + person1.saved + ' from ' + person1.death + ' to ' + person1.life + ' by ' + person1.grace + ' through ' + person1.faith;
+</script>
