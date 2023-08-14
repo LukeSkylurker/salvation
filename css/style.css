@@ -32,6 +32,11 @@ body {
   margin: 0;
 }
 
+.contain-content {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
